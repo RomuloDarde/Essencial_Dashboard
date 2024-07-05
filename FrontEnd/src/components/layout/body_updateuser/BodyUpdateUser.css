@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.body_updateuser {
+    width: 75%;
+    height: 75%;
+    margin-top: 7.5rem;
+    margin-left: 19rem;
+    padding: 2.5rem;
+
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+
+    background-color: #FFFDEF;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: flex-start;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1270px) {
+        width: 70%;
+    }
+
+    @media (max-width: 1050px) {
+        margin-left: 14.5rem;
+        width: 73%;
+    }
+
+    @media (max-width: 920px) {
+        width: 68%;
+    }
+
+    @media (max-width: 750px) {
+        margin-top: 6rem;
+        margin-left: 7.5rem;
+        width: 75%;
+    }
+
+    @media (max-width: 552px) {
+        margin-left: 6rem;
+    }
+
+    @media (max-width: 520px) {
+        overflow-y: hidden;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 660px) {
+        height: 68%;
+    }
+
+    @media (max-height: 430px) {
+        padding-top: 1.5rem;
+        margin-top: 4.5rem;
+        height: 73%;
+    }
+}
+
+.updateuser_data_update_logo {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1350px) {
+        gap: 0;
+    }
+}
+
+.updateuser_dataandupdate {
+    display: flex;
+    align-items: space;
+    flex-direction: column;
+    gap: 3rem;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*USER DATA*/
+.user_data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.user_data h3 {
+    color: #4C2DA6;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.2rem;
+    align-self: self-start;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1000px) {
+        font-size: 1.3rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 430px) {
+        font-size: 1.3rem;
+    }
+}
+
+.user_data form {
+    padding: 1rem;
+    width: 25rem;
+
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border: 0.3px solid #9f9f9f;
+    background-color: #F6F6FB;
+    border-radius: 0.5rem;
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 1225px) {
+        width: 19rem;
+    }
+}
+
+.user_data_field {
+    display: flex;
+    flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    margin-bottom: 0.4rem;
+}
+
+.user_data_field p {
+    width: 5rem;
+}
+
+
+/*USER UPDATE*/
+.user_update {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 0.4rem;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.user_update h3 {
+    color: #2E6239;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.2rem;
+    align-self: self-start;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1000px) {
+        font-size: 1.3rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 430px) {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*INPUTBOX*/
+.updateuser_inputbox {
+    display: flex;
+    align-items: center;
+}
+
+.updateuser_inputbox label {
+    color: #242426;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 7rem;
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 650px) {
+        width: 4rem;
+    }
+}
+
+.updateuser_inputbox input {
+    height: 1.8rem;
+    width: 25rem;
+    padding-left: 0.62rem;
+    margin-bottom: 0.31rem;
+
+    font-size: small;
+    border: 1px solid #757575;
+    border-radius: 8px;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    @media (max-width: 1225px) {
+        width: 19rem;
+    }
+
+    @media (max-width: 650px) {
+        width: 15rem;
+    }
+}
+
+/*UPDATE BUTTON*/
+.update_button {
+    color: #FFFFFF;
+    background-color: #A18F75;
+    border: 1px solid #757575;
+    width: 12.5rem;
+    height: 2rem;
+    align-self: flex-end;
+    cursor: pointer;
+
+    @media (max-width: 650px) {
+        width: 10rem;
+    }
+}
+
+.update_button:hover {
+    background-color: #625D56;
+    color: #FFFFFF
+}
+
+
+/*LOGO*/
+.body_updateuser img {
+    height: 18rem;
+    width: 23rem;
+    max-width: 100%;
+    max-height: 100%;
+
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 1270px) {
+        height: 14.4rem;
+        width: 18.4rem;
+    }
+
+    @media (max-width: 1080px) {
+        height: 11.95rem;
+        width: 15.27rem;
+    }
+
+    @media (max-width: 960px) {
+        height: 0rem;
+        width: 0rem;
+    }
+}
+

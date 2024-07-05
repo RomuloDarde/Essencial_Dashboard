@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: financial_dashboard.service.UserServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.244 s -- in financial_dashboard.service.UserServiceTest

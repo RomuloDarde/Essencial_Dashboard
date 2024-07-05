@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.register_body {
+    width: 75%;
+    height: 75%;
+    margin-top: 7.5rem;
+    margin-left: 19rem;
+    padding: 40px;
+
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+
+    background-color: #FFFDEF;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1280px) {
+        width: 72%;
+    }
+
+    @media (max-width: 1168px) {
+        margin-left: 15.83rem;
+    }
+
+    @media (max-width: 1000px) {
+        margin-left: 13.19rem;
+    }
+
+    @media (max-width: 790px) {
+        width: 66%;
+    }
+
+    @media (max-width: 650px) {
+        margin-left: 6.6rem;
+        margin-top: 6.5rem;
+        width: 75%;
+    }
+
+    @media (max-width: 520px) {
+        width: 85%;
+        height: 85%;
+        margin-left: 2rem;
+        margin-top: 2.5rem;
+    }
+
+
+    /*Largura e Altura - Ajustes de tela*/
+    @media (max-width: 850px) {
+        @media (max-height: 670px) {
+            margin-left: 6.6rem;
+            margin-top: 6.5rem;
+            width: 85%;
+
+            @media (max-width: 768px) {
+                width: 85%;
+                height: 85%;
+                margin-left: 2rem !important;
+                margin-top: 2.5rem !important;
+            }
+        }
+    }
+
+
+    /*Largura e Altura - Posicionamento*/
+    @media (max-width: 950px) {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+
+        @media (max-height: 780px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            padding: 20px;
+
+            @media (max-width: 810px) {
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+
+                @media (max-height: 670px) {
+                    flex-direction: row;
+                    justify-content: flex-start;
+
+                    @media (max-width: 790px) {
+                        width: 85% !important;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*Somente Altura*/
+    @media (max-height: 590px) {
+        padding-top: 20px;
+    }
+
+    @media (max-height: 530px) {
+        margin-top: 4.7rem;
+        height: 80%;
+    }
+}
+
+
+/*BODY FORM*/
+.register_body form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 0.31rem;
+    margin-left: 1.87rem;
+    margin-right: 1.87rem;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 1056px) {
+        margin-right: 0.87rem;
+    }
+}
+
+
+/*TITLE*/
+.register_body form h2 {
+    color: #A62D2D;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.40rem;
+    align-self: self-start;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1200px) {
+        font-size: 1.5rem;
+        margin-bottom: 0.20rem;
+    }
+
+    @media (max-width: 1056px) {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 520px) {
+        font-size: 1.3rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 590px) {
+        margin-bottom: 0;
+    }
+}
+
+
+/*INPUTBOX*/
+.register_body form label {
+    color: #242426;
+    align-self: self-start;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1056px) {
+        font-size: 0.7rem;
+    }
+
+    @media (max-width: 520px) {
+        height: 0;
+        font-size: 0;
+    }
+
+
+    /*Largura e Altura*/
+    @media (max-height: 780px) {
+        @media (max-width: 810px) {
+            height: 0;
+            font-size: 0;
+        }
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 500px) {
+        height: 0;
+        font-size: 0;
+    }
+}
+
+
+.register_body form input, .inputMask {
+    height: 2.18rem;
+    width: 31.25rem;
+    padding-left: 0.62rem;
+    margin-bottom: 0.31rem;
+
+    font-size: medium;
+    border: 1px solid #757575;
+    border-radius: 8px;
+
+    max-width: 100%;
+    max-height: 100%;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1280px) {
+        width: 26rem;
+    }
+
+    @media (max-width: 1200px) {
+        width: 21.67rem;
+        height: 2rem;
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 1056px) {
+        width: 18rem;
+    }
+
+    @media (max-width: 420px) {
+        width: 13rem;
+    }
+}
+
+
+/*REGISTERBOX*/
+.register_body_form_registerbox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    align-self: self-start;
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 430px) {
+        flex-direction: column;
+    }
+}
+
+
+.register_body_form_button_register {
+    color: #FFFFFF;
+    background-color: #A18F75;
+    border: 1px solid #757575;
+}
+
+
+.register_body_form_button_register:hover {
+    background-color: #625D56;
+    color: #FFFFFF
+}
+
+
+.register_body_form_button_login {
+    color: #565643;
+    background-color: transparent;
+    border: transparent;
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 1056px) {
+        font-size: 0.8rem;
+        padding-left: 0.4rem;
+    }
+}
+
+.register_body_form_button_login:hover {
+    color: #A62D2D;
+}
+
+
+/*LOGO*/
+.register_body img {
+    height: 16.2rem;
+    width: 20.7rem;
+    max-width: 100%;
+    max-height: 100%;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1200px) {
+        width: 17.25rem;
+        height: 13.5rem;
+    }
+
+    @media (max-width: 950px) {
+        width: 14.37rem;
+        height: 11.25rem;
+    }
+
+    @media (max-width: 520px) {
+        height: 10.4rem;
+        width: 13.3rem;
+    }
+
+
+    /*Largura e Altura*/
+    @media (max-height: 670px) {
+        @media (max-width: 790px) {
+            height: 9.36rem;
+            width: 11.97rem;
+
+            @media (max-width: 630px) {
+                height: 0;
+                width: 0;
+            }
+        }
+    }
+}
+
+
+/*BUTTONS*/
+.register_body_form_button_register, .register_body_form_button_login {
+    height: 2.19rem;
+    width: 15.62rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+
+
+    /*Responsividade*/
+    @media (max-width: 1280px) {
+        width: 13rem;
+    }
+
+    @media (max-width: 1200px) {
+        width: 10.83rem;
+    }
+
+    @media (max-width: 1056px) {
+        width: 9rem;
+    }
+}

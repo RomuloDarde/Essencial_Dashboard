@@ -1,0 +1,93 @@
+.sidebar_login {
+    /*width: 30.5vh;*/
+    width: 15.62rem;
+    height: 100%;
+    padding: 1.25rem;
+    /* Espaçamento interno da barra lateral */
+
+    background-color: #FDF9D5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra à direita */
+
+    position: fixed;
+    /*elemento fica fixo quando a página é rolada > cabeçalho, barra lateral...*/
+    max-width: 100%;
+    /*a largura do elemento não pode ser maior que a do elemento pai > responsividade*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1168px) {
+        width: 13rem;
+        padding: 0.8rem;
+    }
+
+    @media (max-width: 1000px) {
+        width: 10.83rem;
+        padding: 0.67rem;
+    }
+
+    @media (max-width: 650px) {
+        width: 5rem;
+    }
+
+    @media (max-width: 520px) {
+        width: 0rem;
+        height: 0rem;
+        padding: 0;
+    }
+
+
+    /*Largura e Altura*/
+    @media (max-width: 850px) {
+        @media (max-height: 670px) {
+            width: 5rem;
+
+            @media (max-width: 768px) {
+                width: 0rem;
+                height: 0rem;
+                padding: 0;
+            }
+        }
+    }
+}
+
+
+/*LOGO*/
+.sidebar_login img {
+    height: 11rem;
+    width: 13.5rem;
+
+    max-width: 100%;
+    max-height: 100%;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1168px) {
+        height: 10.09rem;
+        width: 12.37rem;
+    }
+
+    @media (max-width: 1000px) {
+        height: 9.09rem;
+        width: 11.13rem;
+    }
+
+    @media (max-width: 650px) {
+        height: 0;
+        width: 0;
+    }
+
+    /*Largura e Altura*/
+    @media (max-width: 850px) {
+        @media (max-height: 670px) {
+            height: 0;
+            width: 0;
+        }
+    }
+}

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.body_goals {
+    width: 75%;
+    height: 75%;
+    margin-top: 7.5rem;
+    margin-left: 19rem;
+    padding: 2.5rem;
+
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+
+    background-color: #FFFDEF;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    overflow-y: auto;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1270px) {
+        width: 70%;
+    }
+
+    @media (max-width: 1050px) {
+        margin-left: 14.5rem;
+        width: 73%;
+    }
+
+    @media (max-width: 920px) {
+        width: 68%;
+    }
+
+    @media (max-width: 750px) {
+        margin-top: 6rem;
+        margin-left: 7.5rem;
+        width: 75%;
+    }
+
+    @media (max-width: 552px) {
+        margin-left: 6rem;
+    }
+
+    @media (max-width: 450px) {
+        width: 70%;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 430px) {
+        margin-top: 4.5rem;
+    }
+}
+
+
+/*TITLE*/
+.body_goals h2 {
+    color: #A62D2D;
+    font-size: 1.5rem;
+    font-family: "Source Sans 3", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1000px) {
+        font-size: 1.3rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 430px) {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*BODY GOALS*/
+.body_financialgoal,
+.body_investmentgoal {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*GOALS ADDBOX*/
+.investmentgoal_addbox, .financialgoal_addbox {
+    display: flex;
+    align-items: flex-start;
+    height: 3.5rem;
+} 
+
+.financialgoal_addbox {
+    gap: 6rem;
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 1000px) {
+        gap: 3rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 630px) {
+        gap: 3rem;
+    }
+}
+
+.investmentgoal_addbox {
+    gap: 3rem;
+}
+
+
+/*BUTTONBOX GOALS*/
+.financialgoal_buttonbox,
+.investmentgoal_buttonbox {
+    background-color: #FAFBFF;
+    border: 1px solid #757575;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+
+    height: 2.2rem;
+    padding-left: 0.5rem;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 1000px) {
+        height: 1.9rem;
+        font-size: 1rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 630px) {
+        height: 1.9rem;
+        font-size: 1rem;
+    }
+}
+
+
+.financialgoal_buttonbox,
+.financialgoal_buttonbox button {
+    color: #A62D2D;
+    width: 12rem;
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 1000px) {
+        width: 10.5rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 630px) {
+        width: 10.5rem;
+    }
+}
+
+.investmentgoal_buttonbox,
+.investmentgoal_buttonbox button {
+    color: #2E6239;
+    width: 15rem;
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 1000px) {
+        width: 13rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 630px) {
+        width: 13rem;
+    }
+}
+
+.financialgoal_buttonbox button,
+.investmentgoal_buttonbox button {
+    background: transparent;
+    border-color: transparent;
+    outline: none;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    /*Responsividade - Somente Largura*/
+    @media (max-width: 1000px) {
+        font-size: 0.8rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 630px) {
+        font-size: 0.8rem;
+    }
+}
+
+.financialgoal_buttonbox:hover,
+.investmentgoal_buttonbox:hover {
+    background-color: hsl(0, 0%, 75%);
+    box-shadow: none;
+}
+
+
+/*GOALS FORMBOX*/
+.investmentgoal_formbox, .financialgoal_formbox {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0.5rem;
+
+    margin-right: 2rem;
+
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border: 0.3px solid #9f9f9f;
+    background-color: #F6F6FB;
+    border-radius: 0.5rem;
+    align-items: center;
+    font-size: 1.9rem;
+    color: #2E6239;
+
+    position:relative;
+
+    @media (max-width: 1000px) {
+        gap: 0.7rem;
+    }
+}
+
+.financialgoal_formbox {
+    margin-top: -4rem;
+}
+
+.investmentgoal_button_add:hover, .financialgoal_button_add:hover {
+    cursor: pointer;
+    color: #757575;
+}
+
+/*GOALS INPUTBOX*/
+.investmentgoal_inputbox, .financialgoal_inputbox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-left: 0.3rem;
+
+    font-size: 0.7rem !important;
+    color: #000000 !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.investmentgoal_inputbox input, .financialgoal_inputbox input {
+    height: 1.8rem;
+    border-radius: 0.5rem;
+    border: 0.3px solid #9f9f9f;
+    padding: 0.5rem;
+}
+
+.investmentgoal_inputbox input {
+    width: 12rem;
+}
+
+.financialgoal_inputbox input {
+    width: 18rem;
+
+    @media (max-width: 1000px) {
+        width: 12rem;
+    }
+}
+
+
+/*TABLE GOALS*/
+.financialgoal_table, .investmentgoal_table {
+    overflow-x: auto;
+    padding-right: 2rem;
+}
+
+
+.financialgoal_table table, .investmentgoal_table table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+
+/*TABLE TH*/
+.financialgoal_table table th,
+.investmentgoal_table table th {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+    background-color: #F9FAFB;
+
+    font-size: small;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*TABLE TD*/
+.financialgoal_table table td,
+.investmentgoal_table table td {
+    border: 1px solid #ddd;
+    padding: 0.4rem;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+.financialgoal_td_value {
+    font-weight: 600;
+    color: #A62D2D;
+    text-align: center !important;
+}
+
+.investmentgoal_td_value {
+    font-weight: 600;
+    color: #2E6239;
+    text-align: center !important;
+}
+
+.td_update {
+    color: #2E6239;
+    text-align: center !important;
+    font-size: 1.2rem !important;
+    cursor: pointer;
+}
+
+.td_delete {
+    color: #A62D2D;
+    text-align: center !important;
+    font-size: 1.5rem !important;
+    cursor: pointer;
+}
+
+.td_update:hover,
+.td_delete:hover {
+    color: #757575;
+}

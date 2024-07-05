@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+.home_welcome {
+    width: 100%; 
+    height: 23%; 
+    padding: 2.5rem; 
+
+    max-width: 100%;
+    max-height: 100%;
+
+    background-color: #FFFDEF; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.5rem;
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1180px) {
+        padding: 1.8rem;
+    }
+}
+
+
+/*TITLE*/
+.home_welcome h3 {
+    color: #2E6239;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    max-height: 100%;
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1000px) {
+        font-size: 1.3rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 430px) {
+        font-size: 1.1rem;
+    }
+}
+
+
+/*P*/
+.home_welcome p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #52524B;
+    font-size: 0.87rem;
+    max-width: 100%;
+    max-height: 100%;
+}

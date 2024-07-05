@@ -1,0 +1,187 @@
+.body_help {
+    width: 75%;
+    height: 100%;
+    margin-top: 7.5rem;
+    margin-left: 19rem;
+    padding: 2.5rem;
+
+    max-width: 100%;
+    max-height: 100%;
+    position: fixed;
+
+    background-color: #FFFDEF;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+
+    overflow: auto;
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1270px) {
+        width: 70%;
+    }
+
+    @media (max-width: 1050px) {
+        margin-left: 14.5rem;
+        width: 73%;
+    }
+
+    @media (max-width: 920px) {
+        width: 68%;
+    }
+
+    @media (max-width: 750px) {
+        margin-top: 6rem;
+        margin-left: 7.5rem;
+        width: 75%;
+    }
+
+    @media (max-width: 552px) {
+        margin-left: 6rem;
+    }
+
+    @media (max-width: 450px) {
+        width: 70%;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 580px) {
+        height: 70%;
+        padding-bottom: 5rem;
+    }
+
+    @media (max-height: 430px) {
+        margin-top: 4.5rem;
+        padding-bottom: 8rem;
+    }
+}
+
+
+/*TITLE*/
+.title {
+    color: #A62D2D;
+    font-size: 1.5rem;
+    font-family: "Source Sans 3", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1000px) {
+        font-size: 1.3rem;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 430px) {
+        font-size: 1.3rem;
+    }
+}
+
+.transactions_title, .goals_title, .notifications_title, .contact_title {
+    font-size: 1.3rem;
+    font-family: "Source Sans 3", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.7rem;
+}
+
+.transactions_title {
+    color: #a77a00;
+}
+
+.goals_title {
+    color: #2E6239;
+}
+
+.notifications_title {
+    color: #751083;
+}
+
+.contact_title {
+    margin-top: 4rem;
+    color: #4C2DA6;
+}
+
+
+/*TEXT*/
+.transactions, .goals, .notifications, .contact, .body_help {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #565643;
+}
+
+.transactions, .goals, .notifications {
+    margin-bottom: 2.5rem;
+}
+
+.contact {
+    margin-bottom: 10rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+/*IMAGES*/
+.transactions_table_img {
+    width: 40rem;
+    height: auto;
+    margin-top: 0.5rem;
+
+    @media (max-width: 1200px) {
+        width: 35rem;
+    }
+}
+
+.debits_rank_img {
+    width: 50rem;
+    height: auto;
+
+    @media (max-width: 1200px) {
+        width: 40rem;
+    }
+
+    @media (max-width: 960px) {
+        width: 35rem;
+    }
+}
+
+.financial_goal_table_img {
+    width: 45rem;
+    height: auto;
+
+    @media (max-width: 1200px) {
+        width: 40rem;
+    }
+
+    @media (max-width: 960px) {
+        width: 35rem;
+    }
+}
+
+.add_investment_goal_img {
+    width: 35rem;
+    height: auto;
+    margin-top: 0.5rem;
+
+    @media (max-width: 1200px) {
+        width: 30rem;
+    }
+
+    @media (max-width: 960px) {
+        width: 27rem;
+    }
+}
+
+.investment_goal_table_img {
+    width: 25rem;
+    height: auto;
+
+    @media (max-width: 1200px) {
+        width: 22rem;
+    }
+
+    @media (max-width: 960px) {
+        width: 20rem;
+    }
+}

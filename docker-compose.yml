@@ -1,0 +1,47 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./BackEnd
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    depends_on:
+      - database
+    environment:
+      SPRING_DATASOURCE_URL: ${DOCKERCOMPOSE_DB_URL}
+      SPRING_DATASOURCE_USERNAME: ${LOCAL_DB_USER}
+      SPRING_DATASOURCE_PASSWORD: ${LOCAL_DB_PASSWORD}
+    env_file:
+      - .env
+
+  frontend:
+    build:
+      context: ./FrontEnd
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+    depends_on:
+      - backend
+
+  database:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${LOCAL_DB_PASSWORD}
+      MYSQL_DATABASE: ${LOCAL_DB_DATABASE}
+    ports:
+      - "3306:3306"
+    networks:
+      - app-network
+    env_file:
+      - .env
+
+networks:
+  app-network:
+    driver: bridge
+

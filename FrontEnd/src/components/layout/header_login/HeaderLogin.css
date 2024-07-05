@@ -1,0 +1,54 @@
+.header_login {
+    height: 5.62rem;
+    width: 100%;
+    margin-left: 15.68rem;
+
+    background-color: #FDF9D5;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra abaixo */
+
+    position: fixed;
+    /*elemento fica fixo quando a página é rolada > cabeçalho, barra lateral...*/
+    max-width: 100%;
+    /*a largura do elemento não pode ser maior que a do elemento pai > responsividade*/
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1168px) {
+        margin-left: 13.06rem;
+    }
+
+    @media (max-width: 1000px) {
+        margin-left: 10.89rem;
+    }
+
+    @media (max-width: 650px) {
+        margin-left: 5.06rem;
+        height: 4rem;
+    }
+
+    @media (max-width: 520px) {
+        width: 0;
+        height: 0;
+    }
+
+
+    /*Largura e Altura*/
+    @media (max-width: 850px) {
+        @media (max-height: 670px) {
+            margin-left: 5.06rem;
+            height: 4rem;
+
+            @media (max-width: 768px) {
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 530px) {
+        height: 2.5rem;        
+    }
+}

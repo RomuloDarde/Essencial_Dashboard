@@ -1,0 +1,174 @@
+.sidebar_home {
+    width: 15.62rem;
+    height: 100%;
+    padding: 1.25rem;
+
+    background-color: #FDF9D5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    /* Adiciona sombra à direita */
+
+    position: fixed;
+    /*elemento fica fixo quando a página é rolada > cabeçalho, barra lateral...*/
+    max-width: 100%;
+    /*a largura do elemento não pode ser maior que a do elemento pai > responsividade*/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1050px) {
+        width: 12rem;
+        padding: 1rem;
+    }
+
+    @media (max-width: 750px) {
+        width: 5.5rem;
+        padding: 0.8rem;
+    }
+
+    @media (max-width: 552px) {
+        width: 4rem;
+    }
+}
+
+
+/*LOGO*/
+.sidebar_home img {
+    height: 11rem;
+    width: 13.5rem;
+    max-width: 100%;
+    max-height: 100%;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1050px) {
+        height: 9.12rem;
+        width: 11.2rem;
+    }
+
+    @media (max-width: 750px) {
+        height: 5rem;
+        width: 0;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 590px) {
+        height: 0;
+        width: 0;
+    }
+}
+
+
+/*BODY LIST*/
+.sidebar_home ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+
+    width: 12.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1.25rem;
+    max-width: 100%;
+    max-height: 100%;
+
+    list-style: none;
+
+    /*Responsividade - Somente Altura*/
+    @media (max-height: 430px) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.sidebar_home ul label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.87rem;
+    color: #565643;
+    padding-left: 0.5rem;
+    
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 750px) {
+        padding-left: 0;
+    }
+
+    @media (max-width: 552px) {
+        font-size: 0;
+    }
+
+    /*Somente Altura*/
+    @media (max-height: 430px) {
+        font-size: 0;
+    }
+}
+
+
+/*LIST ITEMS*/
+.sidebar_link {
+    width: 100%;
+    text-decoration: none;
+    color: #565643;
+}
+
+.sidebar_home ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.62rem;
+
+    height: 1.75rem;
+    width: 100%;
+    padding-left: 0.5rem;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    color: #565643;
+    border-radius: 1rem;
+
+    cursor: pointer;
+
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1050px) {
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: 750px) {
+        font-size: 1.4rem;
+        width: 2.5rem;
+    }
+}
+
+
+.sidebar_home ul li:hover {
+    background-color: #adad8b;
+}
+
+
+.sidebar_home ul li button {
+    background-color: transparent;
+    border: transparent;
+
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: #565643;
+
+    /*Responsividade*/
+    /*Somente Largura*/
+    @media (max-width: 1050px) {
+        font-size: 11.5px;
+    }
+
+    @media (max-width: 750px) {
+        width: 0;
+        font-size: 0%;
+    }
+}
